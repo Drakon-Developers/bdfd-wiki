@@ -4,7 +4,7 @@ Runs functions in the background. Using async features properly can optimize you
 
 ### Breakdown
 - Use `$async[name]` to start an async block. The name must be unique to the block. Functions inside async blocks run in the background without blocking the command's thread.
-- Use `$endasync` to end async block.
+- Use `$endasync` to end an async block.
 - Use `$await[name]` to wait for the async block's result.
 
 ### Examples
