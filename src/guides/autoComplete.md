@@ -1,5 +1,5 @@
 # Auto Complete for Slash Command Options
-Auto complete allows your bot to read user input as they type it and give user suggestions based on that.\
+Auto complete allows your bot to read the user's input as they type it, and then give the user suggestions based on that.\
 ![example-autocomplete](https://user-images.githubusercontent.com/16838075/177011403-6cfa02e5-ae59-4c8b-895d-219eaa4b8e7f.png)\
 Check [example](#Example) to get started quickly.
 
@@ -16,15 +16,15 @@ This callback receives information about current user input. It's used for addin
 ### `$appendOptionSuggestion[name;suggestion]`
 Used for adding new suggestions.
 - `label` - text which will be displayed in the suggestion list (for example: `arg-ad` from the previous [example](#Auto-Complete-for-Slash-Command-Options))
-- `value` - data that can be accessed in a slash command by using `$message[]` function. `label` is only a display name but `value` holds the actual value for a suggestion.
+- `value` - data that can be accessed in a slash command by using the `$message[]` function. `label` is only a display name, but `value` holds the actual value for a suggestion.
 
-> **Note:** `value` must have the same type as the currently typed option! Meaning, if the option's type is `Integer`, `value` can't be set to `Hello` but it can be set to `123`
+> **Note:** `value` must have the same type as the currently typed option! This means that if the option's type is `Integer`, the `value` can not be set to `Hello`, but it can be set to `123`
 
 ### `$autoCompleteOptionName`
-Returns the name of currently being typed option. For example `arg` from the previous [example](#Auto-Complete-for-Slash-Command-Options)
+Returns the name of the currently typed option. For example: `arg` from the previous [example](#Auto-Complete-for-Slash-Command-Options)
 
 ### `$autoCompleteOptionValue`
-Returns the current user input. For example `ad` from the previous [example](#Auto-Complete-for-Slash-Command-Options)
+Returns the current user input. For example: `ad` from the previous [example](#Auto-Complete-for-Slash-Command-Options)
 
 ## Example
 ### New slash command with a new option:
